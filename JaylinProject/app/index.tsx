@@ -1,4 +1,4 @@
-import { StyleSheet, Image, View } from "react-native";
+import { StyleSheet, Image, View, ScrollView } from "react-native";
 import MyButton from "../components/button";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { Link } from "expo-router";
@@ -12,6 +12,7 @@ const HomeScreen = () => {
   // Above will be the functionality for each button
 
   return (
+    <ScrollView style={styles.scrollViewContainer}>
     <View style={styles.container}>
       <View>
         <Image
@@ -40,12 +41,13 @@ const HomeScreen = () => {
         </View>
       </View>
 
-      <Link asChild href={"https://www.instagram.com/"}>
+      <Link asChild href={"https://www.instagram.com/marketingandmimosas_/"}>
         <TouchableOpacity style={styles.IconContainer}>
           <MaterialCommunityIcons name="instagram" size={35} color="white" />
         </TouchableOpacity>
       </Link>
     </View>
+    </ScrollView>
   );
 };
 
@@ -59,10 +61,17 @@ export default HomeScreen;
 
 
 const styles: { [key: string]: any } = StyleSheet.create({
+
+  scrollViewContainer:{
+    flex: 1,
+    backgroundColor: "#eda201",
+  },
+
+
   container: {
     flex: 1,
     justifyContent: "flex-start",
-    backgroundColor: "#eda201",
+    
   },
 
   gifImage: {

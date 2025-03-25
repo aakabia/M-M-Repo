@@ -29,7 +29,7 @@ const MyButton = ({ text, onPress }: MyButtonProps) => {
     <TouchableHighlight
       style={styles.button}
       onPress={onPress}
-      underlayColor="white"
+      underlayColor="#e3c51c"
     >
       <Text style={styles.text}>{text}</Text>
     </TouchableHighlight>

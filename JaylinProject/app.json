@@ -5,9 +5,9 @@
     "scheme": "Jaylin-Project",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/AVATAR2.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/images/appicon.png",
     "newArchEnabled": true,
+    "userInterfaceStyle": "light", 
     "splash": {
       "image": "./assets/images/hellobeautiful.png",
       "resizeMode": "contain",
@@ -16,33 +16,20 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.anonymous.JaylinProject",
-      "icon": "./assets/images/AVATAR2.png"
+      "icon": "./assets/images/appicon.png"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/AVATAR2.png",
+        "foregroundImage": "./assets/images/appicon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.anonymous.JaylinProject"
     },
     "web": {
-      "favicon": "./assets/images/AVATAR2.png"
+      "favicon": "./assets/images/appicon.png"
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#ffffff",
-          "image": "./assets/images/hellobeautiful.png",
-          "resizeMode": "contain",
-          "dark": {
-            "image": "./assets/images/hellobeautiful.png",
-            "backgroundColor": "#000000"
-          },
-          "imageWidth": 200
-        }
-      ]
+      "expo-router"
     ],
     "extra": {
       "router": {

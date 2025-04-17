@@ -7,7 +7,7 @@
     "orientation": "portrait",
     "icon": "./assets/images/appicon.png",
     "newArchEnabled": true,
-    "userInterfaceStyle": "light", 
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/images/hellobeautiful.png",
       "resizeMode": "contain",
@@ -29,7 +29,9 @@
       "favicon": "./assets/images/appicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "@config-plugins/react-native-blob-util",
+      "@config-plugins/react-native-pdf"
     ],
     "extra": {
       "router": {
